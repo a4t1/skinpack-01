@@ -1,0 +1,24 @@
+{
+  "name": "skinpack-01",
+  "version": "1.0.0",
+  "description": "First MOHAA skinpack of A4T1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a4t1/skinpack-01.git"
+  },
+  "keywords": [
+    "mohaa",
+    "a4t1",
+    "skin"
+  ],
+  "author": "Luke Alzagesi <lucablackdragon@hotmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/a4t1/skinpack-01/issues"
+  },
+  "homepage": "https://github.com/a4t1/skinpack-01#readme"
+}
