@@ -1,13 +1,15 @@
 {
   "name": "@a4t1/skinpack-01",
-  "version": "1.0.0",
+  "version": "1.4.0",
   "description": "First MOHAA skinpack of A4T1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "pak3r pack"
+    "prepublish": "node node_modules/@a4t1/pak3r/index pack"
   },
-  "files": [ "dist" ],
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/a4t1/skinpack-01.git"
@@ -25,6 +27,6 @@
   "homepage": "https://github.com/a4t1/skinpack-01#readme",
   "dependencies": {},
   "devDependencies": {
-    "@a4t1/pak3r": "^1.0.0"
+    "@a4t1/pak3r": "^1.0.1"
   }
 }
