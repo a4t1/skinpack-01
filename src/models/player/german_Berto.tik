@@ -1,0 +1,65 @@
+TIKI
+setup
+{
+	path models/human/german_afrika_private
+	skelmodel daksoldier.skd
+
+	surface pants shader AK-pants
+	surface tunic shader AK-tunic
+	surface c_tunic shader AK-tunic
+	
+	
+	path models/human/heads
+	skelmodel dakhead.skd
+	surface head shader facewrap
+
+	
+	path models/human/hands			
+	skelmodel hand.skd		
+	surface hand shader AK-hands
+
+//	path models/AK_Gear
+//	skelmodel AK_Helm.skd
+//	surface goggles shader AK-goggles
+//	surface outside shader AK-helm
+//	surface outside shader german-helmet_inside
+
+	path models/gear
+	skelmodel afro.skd
+	surface afro shader bertohair
+
+	path models/gear/heer
+	skelmodel karclips.skd
+	surface karclips shader german_riflebelt
+
+	skelmodel loadout.skd
+	surface loadout shader german_gear
+}
+
+
+//
+// define what folder to get specific sound from for the player model
+//
+$define pulloutdir sound/weapons/pullout
+
+
+init
+{
+	client
+	{
+		// Cache sounds here
+	}
+	server
+	{
+		voicetype axis3 // set the voicetype to use for multiplayer instant messaging
+	}
+}
+
+
+//
+// include the base player model definition
+//
+$include models/player/base/include.txt
+
+// need to indicate the end of the tiki file because we have a tiki command at the end
+//end

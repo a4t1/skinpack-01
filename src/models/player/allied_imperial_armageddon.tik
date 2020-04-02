@@ -1,0 +1,52 @@
+TIKI
+setup
+{
+	scale 0.52
+
+	path models/human/german_panzer_tankcommander	// Set path to set skelmodel from
+	skelmodel panzer_tankcommander.skd
+
+	surface coat1 shader imperial_armageddon_tunic
+	surface pants shader imperial_armageddon_pants
+	surface coat2 shader imperial_armageddon_tunic
+
+	// HEAD MASK
+	// =======================================================
+	path models/human/heads
+	skelmodel head1.skd
+	surface head shader imperial_guard_face_mask
+	path models/mask
+	skelmodel gasmask.skd
+	surface gasmask shader imperial_guard_gasmask
+
+	// HANDS
+	// =======================================================
+	path models/human/hands			
+	skelmodel hand.skd		
+	surface hand shader l_gloves
+
+	// GEAR
+	// =======================================================
+	path models/equipment/germangear
+	skelmodel shovel.skd
+	surface shovel shader german_gear
+
+	// HELMET
+	// =======================================================
+	path models/gear/g_headgear
+	skelmodel germanhelmet.skd
+	// surface outside shader imperial_armageddon_helmet
+	// surface inside shader imperial_armageddon_helmet_inside
+	surface outside shader Sentry_helmet
+	surface inside shader german-helmet_inside
+}
+
+init
+{
+	server
+	{
+		voicetype russian
+	}
+}
+
+$include models/player/base/include.txt
